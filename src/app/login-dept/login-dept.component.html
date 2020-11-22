@@ -1,0 +1,50 @@
+<base href="/">
+<div>
+    <div class="row">
+        <div class="col-sm-3 container">
+
+        </div>
+        <div class="col-sm-1 class0">
+            <a href="#"><button class="btn btn-info">Home</button></a><br><br>
+            <a routerLink=''><button class="btn btn-info">Student Login</button></a><br><br>
+            <a href="#"><button class="btn btn-info">Depart ment Login</button></a><br><br>
+            <a routerLink='/pblogin'><button class="btn btn-info">Pareeksha Bhavan Login</button></a><br><br>
+            <a routerLink='/clogin'><button class="btn btn-info">External Valuation</button><br></a>
+        </div>
+        <div class="col-sm-5 container class1">
+            <img src="/images/images.jpg">
+            <div class="jumbotron">
+                <form>
+                    <label class="head"><b>Department Login</b></label><br><br>
+                <div class="form-group dropdown " >
+                    <select class="form-control">
+                        <option>Department</option>
+                        <option>Computer Science</option>
+                        <option>Mathematics</option>
+                        <option>Political Secience</option>
+                    </select><br>
+                </div>
+           
+                    <div class="form-group">
+                        <label>Employee Id</label><br>
+                        <input type="text" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label><br>
+                        <input type="password" class="form-control" id="pass" name="pass" required>
+                    </div>
+                    <div class="form-group">
+                        <a routerLink='/dept'><button type="button" class="btn btn-primary form-control text-center">Login</button></a>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" class="btn btn-secondary form-control">Reset</button>
+                    </div>
+                </form>
+                <label>If new User   .</label><a href="signup.html"><b>Sign Up</b></a>
+            </div>
+        </div>
+        <div class="col-sm-3 container">
+
+        </div>
+    </div>
+</div>

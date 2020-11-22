@@ -1,0 +1,38 @@
+<div class="contianer">
+    <div class="table-responsive">
+        <form   (ngSubmit)="AddExternal()" >
+           
+        
+        <table class="table table-bordered">
+            <thead>
+                <tr >
+                    <th>Reg No.</th>
+                    <th>Paper 1</th>
+                    <th>Paper 2</th>
+                    <th>Paper 3</th>
+                    <th>Paper 4</th>
+                    <th>Paper 5</th>
+                </tr>
+            </thead>
+            <tbody  >
+                <tr  *ngFor="let student of students">
+
+
+                    <td><h5>{{student.rollno}}</h5></td>
+            
+                    <td ><input type="text"name="paper1" [(ngModel)]="student.paper1"></td>
+                    <td><input type="text" name="paper2" [(ngModel)]="student.paper2" ></td>
+                    <td><input type="text" name="paper3" [(ngModel)]="student.paper3"></td>
+                    <td><input type="text" name="paper4" [(ngModel)]="student.paper4"></td>
+                    <td><input type="text" name="paper5" [(ngModel)]="student.paper5" ></td>
+                </tr>
+                <tr><Td><input type="submit" value="submit"/></Td></tr>
+            </tbody>
+                
+            
+        </table>
+    </form>
+    
+    </div>
+    </div>
+    
